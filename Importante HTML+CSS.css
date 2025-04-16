@@ -1,0 +1,51 @@
+/*RESETEAR ESTILOS*/
+/*Para que no haya margen ni padding por defecto*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        /*Para que el body ocupe todo el alto de la pantalla, si es mas alto, ya hace scroll*/
+    min-height: 100vh;
+
+}
+
+/*DISTRIBUCIÓN DE ELEMENTOS*/
+/*Para que se distribuyan en horizontal*/
+display: flex;
+/*Para que ocupe el doble el elemento que queramos*/
+flex:2;
+/*Para que se distribuyan en vertical*/
+flex-direction: column;
+/*Para que se wrapeen, si no caben, se pongan abajo*/
+flex-wrap: wrap;
+/*Para que se centren los elementos*/
+justify-content: center;
+justify-content: space-around;
+justify-content: space-between;
+/*Para que se alineen los elementos al centro*/
+align-items: center;
+/*Pra que se separen con los elementos que tienen alrededor*/
+gap: 10px;
+/*Para que ocupen todo el ancho*/
+flex-basis: 100%;
+/*Ampliar el ancho siempre que pueda (grow=crecer)*/
+flex-grow: 1;
+/*Para que no se difumine la imagen*/
+object-fit: cover;
+/*Para centrar elementos*/
+margin: auto;
+/*Ejemplo de transición al apsar por encima de un elemento*/
+transition: transform 0.5s;
+xxx:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+    /*Para que se distribuyan en vertical*/
+    flex-direction: column;
+    }  
+}
+
+
